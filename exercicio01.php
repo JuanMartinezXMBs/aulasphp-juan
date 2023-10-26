@@ -32,7 +32,7 @@
     $idade = 27;
     ?>
 
-    <p>Esse é o <i><?=$nome?></i> e ele possui <b><?=$idade?></b> </p>
+    <p>Esse é o <i><?=$nome?></i> e ele possui <b><?=$idade?></b> anos. </p>
 
 </body>
 </html>
