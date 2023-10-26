@@ -28,11 +28,11 @@
     -->
 
     <?php
-    $nome = "JOÃO";
+    const NOME = "JOÃO";
     $idade = 27;
     ?>
 
-    <p>Esse é o <i><?=$nome?></i> e ele possui <b><?=$idade?></b> anos. </p>
+    <p>Esse é o <i><?=NOME?></i> e ele possui <b><?=$idade?> anos.</b> </p>
 
 </body>
 </html>
