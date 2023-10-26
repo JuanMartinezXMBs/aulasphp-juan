@@ -70,6 +70,5 @@
     <P>Nome da Empresa: <?=EMPRESA?> </P>
     <P>Fundada em: <?=ANO_FUNDACAO?> </P>
 
-
 </body>
 </html>
