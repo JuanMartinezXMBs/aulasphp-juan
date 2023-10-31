@@ -44,21 +44,21 @@
     <ol>
     <li>Este é o <?=$dados["nome"]?></li>
 
-    <!-- <li>Este é a sua senha: <span id="mensagem" class="oculto"><?=$dados["senha"]?></span></li>
-    <button id="verificar">Ativar</button> -->
+    <li>Este é a sua senha: <span id="mensagem" class="oculto"><?=$dados["senha"]?></span></li>
+    <button id="verificar">Ativar</button>
 
     <li>Ele tem <?=$dados["idade"]?> anos</li>
     <li>E mora em cidade: <?=$dados["cidade"]?></li>
     <li>Telefone: <?=$dados["telefone"][1]?></li>
     </ol>
 
-    <!-- <script>
+    <script>
     const mensagem = document.querySelector("#mensagem");
     const exemplo01 = document.querySelector("#verificar");
 
     exemplo01.addEventListener("click", function(){
-        mensagem.style.backgroundColor = "yellow";
+        mensagem.classList.toggle("oculto")
 });
-    </script> -->
+    </script>
 </body>
 </html>
