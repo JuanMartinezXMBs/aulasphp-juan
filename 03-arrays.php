@@ -7,7 +7,6 @@
 
     <style>
         body {font-family: Verdana;}
-
     </style>
 
 </head>
@@ -61,9 +60,18 @@
 
     <h3>Comandos para analisar a estrutura de arrays: print_r() e var_dump() </h3>
 
+    <!-- Saidas sem formatação -->
     <?=print_r($bandas)?>
     <br><br>
     <?=var_dump($bandas)?>
+
+    <!-- Saidas com formatação usando a tag <pre> -->
+    <pre> <?=print_r($bandas)?> </pre>
+    <pre> <?=var_dump($bandas)?> </pre>
+
+    <pre>
+        <?=var_dump($livro)?>
+    </pre>
 
 
 
