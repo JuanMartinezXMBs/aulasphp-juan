@@ -1,3 +1,5 @@
+<?php include "recursos.php";?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,6 +20,9 @@
     <h1>Condicionais (is, else, else if) </h1>
     <hr>
 
+    <p> <?=ESCOLA?> <?=$anoLetivo?></p>
+
+    <hr>
     <h2>Simples não tem else</h2>
     <?php
     
