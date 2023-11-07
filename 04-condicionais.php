@@ -32,7 +32,7 @@
 
     <?php
 
-    $produto = "carro";
+    $produto = "Geladeira";
     
     $qtdEmDestaque = 0; //o que temos no momento
     $qtdCritica = 2; // minimo necessario
@@ -69,9 +69,9 @@ var_dump($a == $b);
 var_dump($a === $b);
 ?>
 
+<hr>
 
 <h2>Encadeada (if, else e elseif)</h2>
-
 <?php
 //Verificando o produto para dar a garantia certa
 
@@ -86,7 +86,22 @@ if($produto == "Ultrabook"){
 }
 ?>
 
-<p>O produto <?=$produto?> possui garantia de <?=$garantia?> anos.</p>
+<p>O produto <?=$produto?> possui garantia de <?=$garantia?> ano<?php if($garantia>1) echo "s"?>.</p>
+
+<h3>Switch/case</h3>
+
+<?php //switch (analise/avalie)
+switch($produto){
+    case "Ultrabook": $garantia = 5; break;
+    case "Geladeira": $garantia = 3; break;
+    case "Tv": $garantia = 2; break;
+    default: $garantia = 1; break;
+}
+
+?>
+
+<p>Produto <?=$produto?></p>
+<p>Produto <?=$garantia?></p>
 
 </body>
 </html>
