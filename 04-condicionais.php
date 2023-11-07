@@ -31,7 +31,9 @@
     <h2>Composta (if/else)</h2>
 
     <?php
-    $produto = "Ultrabook Dell";
+
+    $produto = "carro";
+    
     $qtdEmDestaque = 0; //o que temos no momento
     $qtdCritica = 2; // minimo necessario
     ?>
@@ -66,6 +68,25 @@ var_dump($a == $b);
 //igualdade de tipos
 var_dump($a === $b);
 ?>
+
+
+<h2>Encadeada (if, else e elseif)</h2>
+
+<?php
+//Verificando o produto para dar a garantia certa
+
+if($produto == "Ultrabook"){
+    $garantia = 5;
+} elseif($produto == "Geladeira"){
+    $garantia = 3;
+} elseif($produto == "TV"){
+    $garantia = 2;
+}else{
+    $garantia = 1;
+}
+?>
+
+<p>O produto <?=$produto?> possui garantia de <?=$garantia?> anos.</p>
 
 </body>
 </html>
