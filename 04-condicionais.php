@@ -99,9 +99,8 @@ switch($produto){
 }
 
 ?>
-
 <p>Produto <?=$produto?></p>
-<p>Produto <?=$garantia?></p>
+<p>Garantia <?=$garantia?></p>
 
 </body>
 </html>
