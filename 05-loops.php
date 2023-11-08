@@ -1,5 +1,5 @@
 <?php
-include "recursos.php";
+require "recursos.php";
 ?>
 
 <!DOCTYPE html>
