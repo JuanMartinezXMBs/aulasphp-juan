@@ -1,3 +1,7 @@
+<?php
+include "recursos.php";
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -15,8 +19,14 @@
             font-weight: bold;
         }
     </style>
+    
 </head>
 <body>
+    <!-- Usando o foreach para acessar os dados do array criado em outro arquivo (Acessivel devivo ao include) -->
+    <?php foreach($linguagens as $linguagem){ ?>
+        <p><i><?=$linguagem?></i></p>
+    <?php } ?>
+
     <h1>Loops no PHP</h1>
     <hr>
     <p> <?=ESCOLA?> <?=$anoLetivo?></p>
